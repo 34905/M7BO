@@ -6,19 +6,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="calender.css">
     <title>Calender van Hasan</title>
 </head>
 <body>
-    <h2>Calender van Hasan</h2>
-    <section id="calender">
+    <h2>Calendar van Hasan</h2>
+    <section id="calendar">
         <div class="header">
-            <button class="prevMonth">&lt;</button>
+            <button class="prevMonth">⇚</button>
             <h2 id="monthYear">Month Year</h2>
-            <button class="nextMonth">&gt;</button>
+            <button class="nextMonth">⇛</button>
         </div>
         <div class="days"></div>
     </section>
-    <link rel="stylesheet" href="style.css">trtte
+    <div class="forms-container">
+        <div id="eventForm">
+            <h3>Add Event</h3>
+            <form id="addEventForm">
+                <input type="date" id="eventDate" required>
+                <input type="text" id="eventName" placeholder="Event Name" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <div id="jumpToDayForm">
+            <h3>Jump to Specific Day</h3>
+            <form id="jumpToDayForm">
+                <input type="date" id="jumpToDate" required>
+                <button type="submit" id="jumpButton">Jump</button>
+            </form>
+        </div>
+    </div>
+    <script src="calender.js" defer></script>
 </body>
 </html>

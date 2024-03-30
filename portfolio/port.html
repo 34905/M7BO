@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <button class="project-btn" data-info="Project 1 Information">View Details</button>
+        </div>
+        <div class="project">
+            <h3>Project Title 2</h3>
+            <button class="project-btn" data-info="Project 2 Information">View Details</button>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <div id="project-details" class="hidden">
+        <div id="project-info"></div>
+        <button id="close-btn">Close</button>
+    </div>
+
+    <script src="posrt.js"></script>
+</body>
+</html>
